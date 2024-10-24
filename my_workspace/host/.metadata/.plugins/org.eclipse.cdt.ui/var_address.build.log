@@ -1,0 +1,6 @@
+08:23:13 **** Incremental Build of configuration Debug for project var_address ****
+make all 
+make: Nothing to be done for 'all'.
+
+08:23:15 Build Finished. 0 errors, 0 warnings. (took 1s.757ms)
+

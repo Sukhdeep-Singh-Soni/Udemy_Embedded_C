@@ -1,0 +1,6 @@
+08:04:58 **** Incremental Build of configuration Debug for project 002_variable_scope ****
+make all 
+make: Nothing to be done for 'all'.
+
+08:05:00 Build Finished. 0 errors, 0 warnings. (took 1s.993ms)
+
