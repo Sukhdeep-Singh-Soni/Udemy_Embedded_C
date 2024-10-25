@@ -1,0 +1,32 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 25, 2024
+ *      Author: deep
+ */
+
+#include <stdio.h>
+
+int function_to_add(int, int, int);
+
+int main() {
+//	function_to_add(10, 30, 50);
+//	function_to_add(20, -20, 14);
+//
+//	int var1 = 40, var2 = 60;
+//	function_to_add(var1, var2, 56);
+//
+//	int ret;
+//
+//	ret = function_to_add(var1, var2, 80);
+//
+//	printf("sum = %d\n", ret);
+
+}
+
+int function_to_add(int a, int b, int c) {
+	int sum;
+	sum = a + b + c;
+//	printf("sum = %d\n",sum);
+	return sum;
+}

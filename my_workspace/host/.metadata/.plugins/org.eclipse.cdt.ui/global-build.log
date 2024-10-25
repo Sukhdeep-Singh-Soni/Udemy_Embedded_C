@@ -1,15 +1,22 @@
-08:22:49 **** Build of configuration Debug for project var_address ****
+08:21:35 **** Incremental Build of configuration Debug for project typecasting ****
 make all 
 Building file: ../main.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:12:20: warning: unsigned conversion from ‘int’ to ‘unsigned char’ changes value from ‘65415’ to ‘135’ [-Woverflow]
+   12 |  unsigned char a = 0x87 + 0xff00; //0x00000087 | 0x0000ff00;
+      |                    ^~~~
+../main.c:24:20: warning: unsigned conversion from ‘long int’ to ‘unsigned char’ changes value from ‘1099511692937’ to ‘137’ [-Woverflow]
+   24 |  unsigned char d = 0x00ffffffff89 + 0xff00; //6 byte(compiler long long int) + 2 byte(int 4byte) implicit to long long int
+      |                    ^~~~~~~~~~~~~~
 Finished building: ../main.c
  
-Building target: var_address
+Building target: typecasting
 Invoking: GCC C Linker
-gcc  -o "var_address"  ./main.o   
-Finished building target: var_address
+gcc  -o "typecasting"  ./main.o   
+Finished building target: typecasting
  
-08:23:13 **** Incremental Build of configuration Debug for project var_address ****
+08:21:46 **** Incremental Build of configuration Debug for project typecasting ****
 make all 
 make: Nothing to be done for 'all'.
