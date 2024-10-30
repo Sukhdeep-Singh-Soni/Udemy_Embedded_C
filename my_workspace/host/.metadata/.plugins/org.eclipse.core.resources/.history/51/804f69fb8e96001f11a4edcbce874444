@@ -1,0 +1,13 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 30, 2024
+ *      Author: deep
+ */
+
+int main() {
+
+	char* ptr = (char *)0x0000ffff76548392; //initialization and declat=ration
+
+}
+

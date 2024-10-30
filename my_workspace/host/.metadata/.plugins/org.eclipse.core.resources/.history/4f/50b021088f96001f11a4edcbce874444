@@ -1,0 +1,21 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 30, 2024
+ *      Author: deep
+ */
+
+int main() {
+
+	char* ptr = (char *)0x0000ffff76548392; //initialization and declat=ration
+
+	char data = 100;
+	printf("address of data = %p\n",data);
+	char* pdata = &data;
+	char value = *pdata;
+	printf("value = %d",value);
+	*pdata = 65;
+	printf("data changed via pointer = %d",data);
+
+}
+
