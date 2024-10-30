@@ -1,0 +1,21 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 30, 2024
+ *      Author: deep
+ */
+
+#include <stdio.h>
+
+int main() {
+	int num1;
+	printf("Enter a number for even or odd check: ");
+	scanf("%d",&num1);
+
+	if(num1 & 1) {
+		printf("even\n");
+	} else {
+		printf("odd\n");
+	}
+	return 0;
+}
