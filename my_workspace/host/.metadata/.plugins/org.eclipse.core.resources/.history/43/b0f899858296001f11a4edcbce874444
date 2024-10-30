@@ -1,0 +1,14 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 30, 2024
+ *      Author: deep
+ */
+
+#include <stdio.h>
+
+int main() {
+
+	float a = 45.34567898712;
+	printf("%f\n",a);
+}

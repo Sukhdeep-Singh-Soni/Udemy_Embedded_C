@@ -15,3 +15,17 @@ Finished building: default.size.stdout
  
 Finished building: 004_add.list
  
+08:26:41 **** Incremental Build of configuration Debug for project 004_add ****
+make -j4 all 
+arm-none-eabi-size  004_add.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4876	    100	   1908	   6884	   1ae4	004_add.elf
+Finished building: default.size.stdout
+ 
+09:22:11 **** Incremental Build of configuration Debug for project 004_add ****
+make -j4 all 
+arm-none-eabi-size  004_add.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4876	    100	   1908	   6884	   1ae4	004_add.elf
+Finished building: default.size.stdout
+ 
