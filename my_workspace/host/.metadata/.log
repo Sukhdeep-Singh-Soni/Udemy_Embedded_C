@@ -129,3 +129,9 @@ Command-line arguments:  -data /home/deep/Desktop/Udemy_Embedded_C/my_workspace/
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-10-30 11:16:37.745
 !MESSAGE Indexed '003_float' (0 sources, 0 headers) in 0.003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-10-30 11:39:54.499
+!MESSAGE Indexed '004_scanf' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-10-30 11:54:14.057
+!MESSAGE Indexed '005_ascii' (0 sources, 0 headers) in 0.016 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)

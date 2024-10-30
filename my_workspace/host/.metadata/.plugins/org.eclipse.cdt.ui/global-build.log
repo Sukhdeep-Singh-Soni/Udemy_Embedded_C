@@ -1,63 +1,12 @@
-11:19:48 **** Incremental Build of configuration Debug for project 003_float ****
+12:04:49 **** Build of configuration Debug for project 004_scanf ****
 make all 
 Building file: ../main.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
 Finished building: ../main.c
  
-Building target: 003_float
+Building target: 004_scanf
 Invoking: GCC C Linker
-gcc  -o "003_float"  ./main.o   
-Finished building target: 003_float
- 
-11:19:54 **** Incremental Build of configuration Debug for project 003_float ****
-make all 
-make: Nothing to be done for 'all'.
-11:20:13 **** Incremental Build of configuration Debug for project 003_float ****
-make all 
-Building file: ../main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
-Finished building: ../main.c
- 
-Building target: 003_float
-Invoking: GCC C Linker
-gcc  -o "003_float"  ./main.o   
-Finished building target: 003_float
- 
-11:21:39 **** Incremental Build of configuration Debug for project 003_float ****
-make all 
-Building file: ../main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
-Finished building: ../main.c
- 
-Building target: 003_float
-Invoking: GCC C Linker
-gcc  -o "003_float"  ./main.o   
-Finished building target: 003_float
- 
-11:22:01 **** Incremental Build of configuration Debug for project 003_float ****
-make all 
-Building file: ../main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
-Finished building: ../main.c
- 
-Building target: 003_float
-Invoking: GCC C Linker
-gcc  -o "003_float"  ./main.o   
-Finished building target: 003_float
- 
-11:22:26 **** Incremental Build of configuration Debug for project 003_float ****
-make all 
-Building file: ../main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
-Finished building: ../main.c
- 
-Building target: 003_float
-Invoking: GCC C Linker
-gcc  -o "003_float"  ./main.o   
-Finished building target: 003_float
+gcc  -o "004_scanf"  ./main.o   
+Finished building target: 004_scanf
  

@@ -1,0 +1,30 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 30, 2024
+ *      Author: deep
+ */
+
+#include <stdio.h>
+
+int main() {
+
+	float num1, num2, num3;
+	float average;
+
+	printf("Enter 1st number: ");
+	scanf("%f",&num1);
+	printf("\nEnter 2nd number: ");
+	scanf("%f",&num2);
+	printf("\nEnter 3rd number: ");
+	scanf("%f",&num3);
+	average = (num1 + num2 + num3) / 3;
+	printf("\nAverage: %f",average);
+	printf("Press enter to exit");
+	while(getchar() != '\n') {
+
+	}
+	getchar();
+
+	return 0;
+}
