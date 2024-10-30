@@ -1,0 +1,27 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 30, 2024
+ *      Author: deep
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+int main() {
+
+	int8_t code;
+
+	printf("Area calculation program\n");
+	printf("Triangle ->  t\n");
+	printf("Trapezoid -> z\n");
+	printf("Circle ->    c\n");
+	printf("Square ->    s\n");
+	printf("Rectangle -> r\n");
+	printf("Press the area code: ");
+	scanf("%d",code);
+
+	switch(code) {
+
+	}//end of switch body
+}

@@ -1,7 +1,8 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:002_variable_scope,org.eclipse.launchbar.core.descriptorType.default\:var_address,org.eclipse.launchbar.core.descriptorType.default\:functions,org.eclipse.launchbar.core.descriptorType.default\:typecasting,org.eclipse.launchbar.core.descriptorType.default\:003_float,org.eclipse.launchbar.core.descriptorType.default\:004_scanf,org.eclipse.launchbar.core.descriptorType.default\:006_pointer
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:002_variable_scope,org.eclipse.launchbar.core.descriptorType.default\:var_address,org.eclipse.launchbar.core.descriptorType.default\:functions,org.eclipse.launchbar.core.descriptorType.default\:typecasting,org.eclipse.launchbar.core.descriptorType.default\:003_float,org.eclipse.launchbar.core.descriptorType.default\:004_scanf,org.eclipse.launchbar.core.descriptorType.default\:006_pointer,org.eclipse.launchbar.core.descriptorType.default\:007_if,org.eclipse.launchbar.core.descriptorType.default\:008_switchCase
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:002_variable_scope/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:002_variable_scope/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:007_if/activeLaunchMode=run

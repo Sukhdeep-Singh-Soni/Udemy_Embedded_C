@@ -1,15 +1,48 @@
-13:12:39 **** Incremental Build of configuration Debug for project 006_pointer ****
+17:11:25 **** Incremental Build of configuration Debug for project 008_switchCase ****
 make all 
 Building file: ../main.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
 Finished building: ../main.c
  
-Building target: 006_pointer
+Building target: 008_switchCase
 Invoking: GCC C Linker
-gcc  -o "006_pointer"  ./main.o   
-Finished building target: 006_pointer
+gcc  -o "008_switchCase"  ./main.o   
+Finished building target: 008_switchCase
  
-13:12:44 **** Incremental Build of configuration Debug for project 006_pointer ****
+17:11:31 **** Incremental Build of configuration Debug for project 008_switchCase ****
+make all 
+make: Nothing to be done for 'all'.
+17:12:14 **** Incremental Build of configuration Debug for project 008_switchCase ****
+make all 
+make: Nothing to be done for 'all'.
+17:13:07 **** Incremental Build of configuration Debug for project 008_switchCase ****
+make all 
+make: Nothing to be done for 'all'.
+17:13:39 **** Incremental Build of configuration Debug for project 008_switchCase ****
+make all 
+make: Nothing to be done for 'all'.
+17:13:53 **** Incremental Build of configuration Debug for project 008_switchCase ****
+make all 
+make: Nothing to be done for 'all'.
+17:15:19 **** Incremental Build of configuration Debug for project 008_switchCase ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: 008_switchCase
+Invoking: GCC C Linker
+gcc  -o "008_switchCase"  ./main.o   
+Finished building target: 008_switchCase
+ 
+17:15:35 **** Incremental Build of configuration Debug for project 008_switchCase ****
+make all 
+make: Nothing to be done for 'all'.
+17:16:35 **** Incremental Build of configuration Debug for project 008_switchCase ****
+make all 
+make: Nothing to be done for 'all'.
+17:16:55 **** Incremental Build of configuration Debug for project 008_switchCase ****
 make all 
 make: Nothing to be done for 'all'.

@@ -1,0 +1,35 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 30, 2024
+ *      Author: deep
+ */
+
+#include <stdio.h>
+
+int main() {
+//	int age;
+//	printf("Enter age: ");
+//	scanf("%d", &age);
+//	if(age < 18) {
+//		printf("Sorry! you are not eligible to vote\n");
+//	} else {
+//		printf("Yes, you are eligible\n");
+//	}
+//	if(age >= 18) {
+//		printf("Yes, you are eligible\n");
+//	}
+
+	float num1, num2;
+	printf("Enter 1st number(integer): ");
+	if( scanf("%f", &num1) )
+		printf("Invalid input!\n");
+	return 0;
+}
+
+void wait_for_user_to_exit(void) {
+	printf("Press enter to exit...");
+	while(getchar() != '\n');
+	getchar();
+
+}

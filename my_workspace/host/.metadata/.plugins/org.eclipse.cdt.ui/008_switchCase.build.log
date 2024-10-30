@@ -1,0 +1,6 @@
+17:16:55 **** Incremental Build of configuration Debug for project 008_switchCase ****
+make all 
+make: Nothing to be done for 'all'.
+
+17:16:57 Build Finished. 0 errors, 0 warnings. (took 1s.863ms)
+
