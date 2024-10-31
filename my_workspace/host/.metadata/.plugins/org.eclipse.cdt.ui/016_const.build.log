@@ -10,3 +10,6 @@ Invoking: GCC C Linker
 gcc  -o "016_const"  ./const.o   
 Finished building target: 016_const
  
+
+08:47:35 Build Finished. 0 errors, 0 warnings. (took 1s.939ms)
+

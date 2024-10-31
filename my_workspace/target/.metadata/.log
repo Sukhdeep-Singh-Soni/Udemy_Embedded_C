@@ -10965,3 +10965,18 @@ Command-line arguments:  -data /home/deep/Desktop/Udemy_Embedded_C/my_workspace/
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-10-31 08:23:40.930
 !MESSAGE Indexed '006_led_toggle' (3 sources, 53 headers) in 4.25 sec: 1,950 declarations; 2,836 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+!SESSION 2024-10-31 10:00:40.009 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -data /home/deep/Desktop/Udemy_Embedded_C/my_workspace/target -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-10-31 10:00:49.698
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-10-31 10:00:49.699
+!MESSAGE Log4j2 initialized with config file /home/deep/Desktop/Udemy_Embedded_C/my_workspace/target/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-10-31 10:01:00.801
+!MESSAGE Started RMI Server, listening on port 41337

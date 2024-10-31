@@ -1,0 +1,19 @@
+/*
+ * const.c
+ *
+ *  Created on: Oct 31, 2024
+ *      Author: deep
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+int main() {
+
+	uint8_t const data = 50;
+
+	printf("data : %u\n", data);
+	data = 56;
+	printf("data : %u\n", data);
+
+}

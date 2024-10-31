@@ -1,0 +1,22 @@
+/*
+ * const.c
+ *
+ *  Created on: Oct 31, 2024
+ *      Author: deep
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+int main() {
+
+	uint8_t const data = 50;
+
+	printf("data : %u\n", data);
+#if 0
+	data = 56; //if try to change const variable by name compiler gives error
+#endif
+	uint8_t *ptr = &data;
+	printf("data : %u\n", data);
+
+}
