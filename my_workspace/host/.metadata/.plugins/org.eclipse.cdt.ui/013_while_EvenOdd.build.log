@@ -1,0 +1,15 @@
+07:52:43 **** Incremental Build of configuration Debug for project 013_while_EvenOdd ****
+make all 
+Building file: ../even.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"even.d" -MT"even.o" -o "even.o" "../even.c"
+Finished building: ../even.c
+ 
+Building target: 013_while_EvenOdd
+Invoking: GCC C Linker
+gcc  -o "013_while_EvenOdd"  ./even.o   
+Finished building target: 013_while_EvenOdd
+ 
+
+07:52:45 Build Finished. 0 errors, 0 warnings. (took 2s.88ms)
+

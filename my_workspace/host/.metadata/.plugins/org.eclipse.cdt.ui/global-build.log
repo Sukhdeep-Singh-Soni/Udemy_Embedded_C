@@ -1,39 +1,12 @@
-20:08:19 **** Build of configuration Debug for project 011_bitwise_set ****
+08:13:20 **** Incremental Build of configuration Debug for project 015_for_pyramid ****
 make all 
-Building file: ../main.c
+Building file: ../number_pyramid.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
-Finished building: ../main.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"number_pyramid.d" -MT"number_pyramid.o" -o "number_pyramid.o" "../number_pyramid.c"
+Finished building: ../number_pyramid.c
  
-Building target: 011_bitwise_set
+Building target: 015_for_pyramid
 Invoking: GCC C Linker
-gcc  -o "011_bitwise_set"  ./main.o   
-Finished building target: 011_bitwise_set
- 
-20:08:23 **** Incremental Build of configuration Debug for project 011_bitwise_set ****
-make all 
-make: Nothing to be done for 'all'.
-20:08:43 **** Incremental Build of configuration Debug for project 011_bitwise_set ****
-make all 
-Building file: ../main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
-Finished building: ../main.c
- 
-Building target: 011_bitwise_set
-Invoking: GCC C Linker
-gcc  -o "011_bitwise_set"  ./main.o   
-Finished building target: 011_bitwise_set
- 
-20:16:46 **** Incremental Build of configuration Debug for project 011_bitwise_set ****
-make all 
-Building file: ../main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
-Finished building: ../main.c
- 
-Building target: 011_bitwise_set
-Invoking: GCC C Linker
-gcc  -o "011_bitwise_set"  ./main.o   
-Finished building target: 011_bitwise_set
+gcc  -o "015_for_pyramid"  ./number_pyramid.o   
+Finished building target: 015_for_pyramid
  

@@ -1,0 +1,38 @@
+/*
+ * even.c
+ *
+ *  Created on: Oct 31, 2024
+ *      Author: deep
+ */
+
+#include <stdio.h>
+
+void wait_for_user_to_exit(void);
+
+int main() {
+
+	int startnum, endnum;
+	printf("Enter 2 integers: [start number] [end number]");
+	scanf("%d %d", &startnum, endnum);
+
+	if(startnum > endnum) {
+		//error
+		printf("start number must be smaller than end number");
+	}
+
+	while(startnum <= endnum) {
+		printf("%d\n", i++);
+	}
+
+	wait_for_user_to_exit();
+	return 0;
+
+}
+
+void wait_for_user_to_exit(void) {
+	printf("Press enter to exit...");
+	while(getchar() != '\n');
+	getchar();
+}
+
+

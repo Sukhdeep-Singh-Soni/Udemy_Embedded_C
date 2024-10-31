@@ -1,0 +1,15 @@
+08:04:17 **** Build of configuration Debug for project 014_for_evenum ****
+make all 
+Building file: ../for.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"for.d" -MT"for.o" -o "for.o" "../for.c"
+Finished building: ../for.c
+ 
+Building target: 014_for_evenum
+Invoking: GCC C Linker
+gcc  -o "014_for_evenum"  ./for.o   
+Finished building target: 014_for_evenum
+ 
+
+08:04:19 Build Finished. 0 errors, 0 warnings. (took 1s.887ms)
+

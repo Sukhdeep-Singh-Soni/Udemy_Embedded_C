@@ -1,0 +1,15 @@
+08:13:20 **** Incremental Build of configuration Debug for project 015_for_pyramid ****
+make all 
+Building file: ../number_pyramid.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"number_pyramid.d" -MT"number_pyramid.o" -o "number_pyramid.o" "../number_pyramid.c"
+Finished building: ../number_pyramid.c
+ 
+Building target: 015_for_pyramid
+Invoking: GCC C Linker
+gcc  -o "015_for_pyramid"  ./number_pyramid.o   
+Finished building target: 015_for_pyramid
+ 
+
+08:13:22 Build Finished. 0 errors, 0 warnings. (took 2s.34ms)
+
