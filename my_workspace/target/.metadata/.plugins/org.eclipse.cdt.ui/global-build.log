@@ -1,118 +1,71 @@
-22:39:38 **** Build of configuration Debug for project 005_led_on ****
+10:44:50 **** Incremental Build of configuration Debug for project 007_pin_read ****
 make -j4 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O1 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O1 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O1 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "007_pin_read.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/deep/Desktop/Udemy_Embedded_C/my_workspace/target/007_pin_read/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="007_pin_read.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 007_pin_read.elf
+ 
+arm-none-eabi-size  007_pin_read.elf 
+arm-none-eabi-objdump -h -S 007_pin_read.elf  > "007_pin_read.list"
+   text	   data	    bss	    dec	    hex	filename
+    716	      0	   1568	   2284	    8ec	007_pin_read.elf
+Finished building: default.size.stdout
+ 
+Finished building: 007_pin_read.list
+ 
+10:45:16 **** Incremental Build of configuration Debug for project 007_pin_read ****
+make -j4 all 
+arm-none-eabi-size  007_pin_read.elf 
+   text	   data	    bss	    dec	    hex	filename
+    716	      0	   1568	   2284	    8ec	007_pin_read.elf
+Finished building: default.size.stdout
+ 
+10:46:05 **** Incremental Build of configuration Debug for project 007_pin_read ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O2 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O2 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O2 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "007_pin_read.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/deep/Desktop/Udemy_Embedded_C/my_workspace/target/007_pin_read/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="007_pin_read.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 007_pin_read.elf
+ 
+arm-none-eabi-size  007_pin_read.elf 
+arm-none-eabi-objdump -h -S 007_pin_read.elf  > "007_pin_read.list"
+   text	   data	    bss	    dec	    hex	filename
+    700	      0	   1568	   2268	    8dc	007_pin_read.elf
+Finished building: default.size.stdout
+ 
+Finished building: 007_pin_read.list
+ 
+10:51:23 **** Incremental Build of configuration Debug for project 007_pin_read ****
+make -j4 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
 arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
 arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "005_led_on.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/deep/Desktop/Udemy_Embedded_C/my_workspace/target/005_led_on/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_led_on.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 005_led_on.elf
+arm-none-eabi-gcc -o "007_pin_read.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/deep/Desktop/Udemy_Embedded_C/my_workspace/target/007_pin_read/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="007_pin_read.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 007_pin_read.elf
  
-arm-none-eabi-size  005_led_on.elf 
-arm-none-eabi-objdump -h -S 005_led_on.elf  > "005_led_on.list"
+arm-none-eabi-size  007_pin_read.elf 
+arm-none-eabi-objdump -h -S 007_pin_read.elf  > "007_pin_read.list"
    text	   data	    bss	    dec	    hex	filename
-    740	      0	   1568	   2308	    904	005_led_on.elf
+    788	      0	   1568	   2356	    934	007_pin_read.elf
 Finished building: default.size.stdout
  
-Finished building: 005_led_on.list
+Finished building: 007_pin_read.list
  
-22:39:55 **** Incremental Build of configuration Debug for project 005_led_on ****
+10:56:54 **** Incremental Build of configuration Debug for project 007_pin_read ****
 make -j4 all 
-arm-none-eabi-size  005_led_on.elf 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O2 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O2 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O2 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "007_pin_read.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/deep/Desktop/Udemy_Embedded_C/my_workspace/target/007_pin_read/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="007_pin_read.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 007_pin_read.elf
+ 
+arm-none-eabi-size  007_pin_read.elf 
+arm-none-eabi-objdump -h -S 007_pin_read.elf  > "007_pin_read.list"
    text	   data	    bss	    dec	    hex	filename
-    740	      0	   1568	   2308	    904	005_led_on.elf
+    700	      0	   1568	   2268	    8dc	007_pin_read.elf
 Finished building: default.size.stdout
  
-22:41:36 **** Incremental Build of configuration Debug for project 005_led_on ****
-make -j4 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "005_led_on.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/deep/Desktop/Udemy_Embedded_C/my_workspace/target/005_led_on/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_led_on.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 005_led_on.elf
- 
-arm-none-eabi-size  005_led_on.elf 
-arm-none-eabi-objdump -h -S 005_led_on.elf  > "005_led_on.list"
-   text	   data	    bss	    dec	    hex	filename
-    740	      0	   1568	   2308	    904	005_led_on.elf
-Finished building: default.size.stdout
- 
-Finished building: 005_led_on.list
- 
-23:00:01 **** Incremental Build of configuration Debug for project 005_led_on ****
-make -j4 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "005_led_on.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/deep/Desktop/Udemy_Embedded_C/my_workspace/target/005_led_on/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_led_on.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 005_led_on.elf
- 
-arm-none-eabi-size  005_led_on.elf 
-arm-none-eabi-objdump -h -S 005_led_on.elf  > "005_led_on.list"
-   text	   data	    bss	    dec	    hex	filename
-    740	      0	   1568	   2308	    904	005_led_on.elf
-Finished building: default.size.stdout
- 
-Finished building: 005_led_on.list
- 
-08:26:37 **** Build of configuration Debug for project 006_led_toggle ****
-make -j4 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "006_led_toggle.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/deep/Desktop/Udemy_Embedded_C/my_workspace/target/006_led_toggle/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="006_led_toggle.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 006_led_toggle.elf
- 
-arm-none-eabi-size  006_led_toggle.elf 
-arm-none-eabi-objdump -h -S 006_led_toggle.elf  > "006_led_toggle.list"
-   text	   data	    bss	    dec	    hex	filename
-    792	      0	   1568	   2360	    938	006_led_toggle.elf
-Finished building: default.size.stdout
- 
-Finished building: 006_led_toggle.list
- 
-08:26:49 **** Incremental Build of configuration Debug for project 006_led_toggle ****
-make -j4 all 
-arm-none-eabi-size  006_led_toggle.elf 
-   text	   data	    bss	    dec	    hex	filename
-    792	      0	   1568	   2360	    938	006_led_toggle.elf
-Finished building: default.size.stdout
- 
-08:27:47 **** Incremental Build of configuration Debug for project 006_led_toggle ****
-make -j4 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "006_led_toggle.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/deep/Desktop/Udemy_Embedded_C/my_workspace/target/006_led_toggle/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="006_led_toggle.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 006_led_toggle.elf
- 
-arm-none-eabi-size  006_led_toggle.elf 
-arm-none-eabi-objdump -h -S 006_led_toggle.elf  > "006_led_toggle.list"
-   text	   data	    bss	    dec	    hex	filename
-    792	      0	   1568	   2360	    938	006_led_toggle.elf
-Finished building: default.size.stdout
- 
-Finished building: 006_led_toggle.list
- 
-08:28:30 **** Incremental Build of configuration Debug for project 006_led_toggle ****
-make -j4 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "006_led_toggle.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/deep/Desktop/Udemy_Embedded_C/my_workspace/target/006_led_toggle/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="006_led_toggle.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 006_led_toggle.elf
- 
-arm-none-eabi-size  006_led_toggle.elf 
-arm-none-eabi-objdump -h -S 006_led_toggle.elf  > "006_led_toggle.list"
-   text	   data	    bss	    dec	    hex	filename
-    792	      0	   1568	   2360	    938	006_led_toggle.elf
-Finished building: default.size.stdout
- 
-Finished building: 006_led_toggle.list
- 
-08:29:28 **** Incremental Build of configuration Debug for project 006_led_toggle ****
-make -j4 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "006_led_toggle.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/deep/Desktop/Udemy_Embedded_C/my_workspace/target/006_led_toggle/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="006_led_toggle.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 006_led_toggle.elf
- 
-arm-none-eabi-size  006_led_toggle.elf 
-arm-none-eabi-objdump -h -S 006_led_toggle.elf  > "006_led_toggle.list"
-   text	   data	    bss	    dec	    hex	filename
-    792	      0	   1568	   2360	    938	006_led_toggle.elf
-Finished building: default.size.stdout
- 
-Finished building: 006_led_toggle.list
+Finished building: 007_pin_read.list
  
