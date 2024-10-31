@@ -1,0 +1,23 @@
+11:12:13 **** Incremental Build of configuration Debug for project 008_volatile ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O1 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O1 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O1 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../Src/main.c: In function 'main':
+../Src/main.c:24:13: warning: variable 'data2' set but not used [-Wunused-but-set-variable]
+   24 |         int data2;
+      |             ^~~~~
+arm-none-eabi-gcc -o "008_volatile.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/deep/Desktop/Udemy_Embedded_C/my_workspace/target/008_vloatile/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="008_volatile.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 008_volatile.elf
+ 
+arm-none-eabi-size  008_volatile.elf 
+arm-none-eabi-objdump -h -S 008_volatile.elf  > "008_volatile.list"
+   text	   data	    bss	    dec	    hex	filename
+    660	      0	   1568	   2228	    8b4	008_volatile.elf
+Finished building: default.size.stdout
+ 
+Finished building: 008_volatile.list
+ 
+
+11:12:15 Build Finished. 0 errors, 1 warnings. (took 2s.2ms)
+

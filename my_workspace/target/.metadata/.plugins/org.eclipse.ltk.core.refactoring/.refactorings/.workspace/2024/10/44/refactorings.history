@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;008_vloatile&apos; to &apos;008_volatile&apos;" description="Rename resource &apos;008_vloatile&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/008_vloatile" name="008_volatile" stamp="1730353049731" updateReferences="true"/>
+</session>

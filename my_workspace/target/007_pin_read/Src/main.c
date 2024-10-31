@@ -25,10 +25,11 @@
 int main(void)
 {
 	//RCC engine AHB1 peripheral clock enable register address
-	uint32_t *pClkCtrlReg = (uint32_t *)(0x40023800U + 0x30); //offset for AHB1ENR
-	uint32_t *pGpioAModereg = (uint32_t*)(0x40020000U + 0x00); //gpioa mode reg
-	uint32_t *pGpioAOutreg = (uint32_t*)(0x40020000U + 0x14); //gpioa output data reg
-	uint32_t *pGpioInReg = (uint32_t*)(0x40020000U + 0x10); //gpioa input data register
+	/*fixing bug by using volatile qualifier after increasing the oprimization level*/
+	uint32_t volatile *pClkCtrlReg = (uint32_t *)(0x40023800U + 0x30); //offset for AHB1ENR
+	uint32_t volatile *pGpioAModereg = (uint32_t*)(0x40020000U + 0x00); //gpioa mode reg
+	uint32_t volatile *pGpioAOutreg = (uint32_t*)(0x40020000U + 0x14); //gpioa output data reg
+	uint32_t volatile *pGpioInReg = (uint32_t*)(0x40020000U + 0x10); //gpioa input data register
 
 	/*enable clock for GPIOA peripheral*/
 //	uint32_t temp = *pClkCtrlReg; //read

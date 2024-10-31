@@ -1,4 +1,4 @@
-10:56:54 **** Incremental Build of configuration Debug for project 007_pin_read ****
+11:24:13 **** Incremental Build of configuration Debug for project 007_pin_read ****
 make -j4 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O2 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
 arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O2 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
@@ -9,11 +9,11 @@ Finished building target: 007_pin_read.elf
 arm-none-eabi-size  007_pin_read.elf 
 arm-none-eabi-objdump -h -S 007_pin_read.elf  > "007_pin_read.list"
    text	   data	    bss	    dec	    hex	filename
-    700	      0	   1568	   2268	    8dc	007_pin_read.elf
+    728	      0	   1568	   2296	    8f8	007_pin_read.elf
 Finished building: default.size.stdout
  
 Finished building: 007_pin_read.list
  
 
-10:56:56 Build Finished. 0 errors, 0 warnings. (took 1s.985ms)
+11:24:15 Build Finished. 0 errors, 0 warnings. (took 1s.987ms)
 
