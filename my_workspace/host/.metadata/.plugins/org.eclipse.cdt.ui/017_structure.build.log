@@ -1,0 +1,15 @@
+11:49:20 **** Build of configuration Debug for project 017_structure ****
+make all 
+Building file: ../struct.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"struct.d" -MT"struct.o" -o "struct.o" "../struct.c"
+Finished building: ../struct.c
+ 
+Building target: 017_structure
+Invoking: GCC C Linker
+gcc  -o "017_structure"  ./struct.o   
+Finished building target: 017_structure
+ 
+
+11:49:22 Build Finished. 0 errors, 0 warnings. (took 2s.154ms)
+

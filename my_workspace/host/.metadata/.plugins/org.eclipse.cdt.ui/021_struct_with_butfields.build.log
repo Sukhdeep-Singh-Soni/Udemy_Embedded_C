@@ -1,0 +1,6 @@
+13:28:23 **** Incremental Build of configuration Debug for project 021_struct_with_butfields ****
+make all 
+make: Nothing to be done for 'all'.
+
+13:28:25 Build Finished. 0 errors, 0 warnings. (took 1s.782ms)
+

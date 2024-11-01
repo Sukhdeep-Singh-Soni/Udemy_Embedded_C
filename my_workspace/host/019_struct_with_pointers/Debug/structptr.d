@@ -1,0 +1,1 @@
+structptr.o: ../structptr.c

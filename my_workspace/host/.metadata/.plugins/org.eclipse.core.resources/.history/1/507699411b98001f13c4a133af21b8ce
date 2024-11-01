@@ -1,0 +1,21 @@
+/*
+ * struct_pad.c
+ *
+ *  Created on: Nov 1, 2024
+ *      Author: deep
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+struct dataSet {
+	char  data1;
+	int   data2;
+	char  data3;
+	short data4;
+};
+
+int main() {
+
+}
+

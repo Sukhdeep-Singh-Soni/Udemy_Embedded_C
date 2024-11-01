@@ -1,0 +1,15 @@
+12:08:11 **** Incremental Build of configuration Debug for project 018_struct_padding ****
+make all 
+Building file: ../struct_pad.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"struct_pad.d" -MT"struct_pad.o" -o "struct_pad.o" "../struct_pad.c"
+Finished building: ../struct_pad.c
+ 
+Building target: 018_struct_padding
+Invoking: GCC C Linker
+gcc  -o "018_struct_padding"  ./struct_pad.o   
+Finished building target: 018_struct_padding
+ 
+
+12:08:13 Build Finished. 0 errors, 0 warnings. (took 1s.937ms)
+

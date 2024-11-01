@@ -1026,3 +1026,21 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-10-31 11:24:09.877
 !MESSAGE Indexed '007_pin_read' (3 sources, 53 headers) in 0.385 sec: 1,955 declarations; 2,852 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+!SESSION 2024-11-01 12:18:02.915 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -data /home/deep/Desktop/Udemy_Embedded_C/my_workspace/target -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-01 12:18:11.072
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-01 12:18:11.074
+!MESSAGE Log4j2 initialized with config file /home/deep/Desktop/Udemy_Embedded_C/my_workspace/target/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-01 12:18:20.370
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-01 12:25:42.394
+!MESSAGE Indexed '009_struct_aligned_vs_unaligned' (2 sources, 53 headers) in 2.26 sec: 1,948 declarations; 2,834 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)

@@ -2200,3 +2200,48 @@ Command-line arguments:  -data /home/deep/Desktop/Udemy_Embedded_C/my_workspace/
 
 !ENTRY org.eclipse.core.jobs 2 2 2024-10-31 10:02:28.149
 !MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.ui.internal.Workbench$39
+!SESSION 2024-11-01 11:39:28.807 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -data /home/deep/Desktop/Udemy_Embedded_C/my_workspace/host -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-01 11:39:38.296
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-01 11:39:38.298
+!MESSAGE Log4j2 initialized with config file /home/deep/Desktop/Udemy_Embedded_C/my_workspace/host/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-01 11:39:47.081
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-01 11:41:23.196
+!MESSAGE Indexed '017_structure' (0 sources, 0 headers) in 0.003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-01 11:59:50.993
+!MESSAGE Indexed '018_struct_padding' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2024-11-01 12:42:30.518 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -data /home/deep/Desktop/Udemy_Embedded_C/my_workspace/host -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-01 12:42:39.088
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-01 12:42:39.090
+!MESSAGE Log4j2 initialized with config file /home/deep/Desktop/Udemy_Embedded_C/my_workspace/host/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-01 12:42:46.472
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-01 12:43:37.418
+!MESSAGE Indexed '019_struct_with_pointers' (0 sources, 0 headers) in 0.007 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-01 13:01:14.702
+!MESSAGE Indexed '020_struct_packet' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-01 13:26:19.825
+!MESSAGE Indexed '021_struct_with_butfields' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)

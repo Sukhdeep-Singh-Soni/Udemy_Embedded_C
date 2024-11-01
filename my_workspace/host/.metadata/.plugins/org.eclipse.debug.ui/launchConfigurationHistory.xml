@@ -2,6 +2,9 @@
 <launchHistory>
     <launchGroup id="org.eclipse.debug.ui.launchGroup.debug">
         <mruHistory>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;021_struct_with_butfields&quot;/&gt;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;020_struct_packet&quot;/&gt;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;019_struct_with_pointers&quot;/&gt;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;011_bitwise_set&quot;/&gt;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;010_bitwise_even_odd&quot;/&gt;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;009_bitwise&quot;/&gt;&#10;"/>
@@ -9,9 +12,6 @@
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;007_if&quot;/&gt;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;006_pointer&quot;/&gt;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;004_scanf&quot;/&gt;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;003_float&quot;/&gt;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;typecasting&quot;/&gt;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;functions&quot;/&gt;&#10;"/>
         </mruHistory>
         <favorites/>
     </launchGroup>
@@ -25,6 +25,9 @@
     </launchGroup>
     <launchGroup id="org.eclipse.debug.ui.launchGroup.run">
         <mruHistory>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;021_struct_with_butfields&quot;/&gt;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;020_struct_packet&quot;/&gt;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;019_struct_with_pointers&quot;/&gt;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;011_bitwise_set&quot;/&gt;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;010_bitwise_even_odd&quot;/&gt;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;009_bitwise&quot;/&gt;&#10;"/>
@@ -32,9 +35,6 @@
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;007_if&quot;/&gt;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;006_pointer&quot;/&gt;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;004_scanf&quot;/&gt;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;003_float&quot;/&gt;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;typecasting&quot;/&gt;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;functions&quot;/&gt;&#10;"/>
         </mruHistory>
         <favorites/>
     </launchGroup>
