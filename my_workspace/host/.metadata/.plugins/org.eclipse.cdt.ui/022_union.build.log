@@ -1,0 +1,15 @@
+13:43:57 **** Build of configuration Debug for project 022_union ****
+make all 
+Building file: ../union.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"union.d" -MT"union.o" -o "union.o" "../union.c"
+Finished building: ../union.c
+ 
+Building target: 022_union
+Invoking: GCC C Linker
+gcc  -o "022_union"  ./union.o   
+Finished building target: 022_union
+ 
+
+13:43:59 Build Finished. 0 errors, 0 warnings. (took 1s.980ms)
+

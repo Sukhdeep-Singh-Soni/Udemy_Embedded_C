@@ -1,0 +1,15 @@
+13:56:56 **** Incremental Build of configuration Debug for project 023_union_bit_extraction ****
+make all 
+Building file: ../bit_extraction.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"bit_extraction.d" -MT"bit_extraction.o" -o "bit_extraction.o" "../bit_extraction.c"
+Finished building: ../bit_extraction.c
+ 
+Building target: 023_union_bit_extraction
+Invoking: GCC C Linker
+gcc  -o "023_union_bit_extraction"  ./bit_extraction.o   
+Finished building target: 023_union_bit_extraction
+ 
+
+13:56:58 Build Finished. 0 errors, 0 warnings. (took 1s.980ms)
+

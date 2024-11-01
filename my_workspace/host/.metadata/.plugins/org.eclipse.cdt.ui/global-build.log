@@ -1,15 +1,12 @@
-13:28:15 **** Build of configuration Debug for project 021_struct_with_butfields ****
+13:56:56 **** Incremental Build of configuration Debug for project 023_union_bit_extraction ****
 make all 
-Building file: ../bitfields.c
+Building file: ../bit_extraction.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"bitfields.d" -MT"bitfields.o" -o "bitfields.o" "../bitfields.c"
-Finished building: ../bitfields.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"bit_extraction.d" -MT"bit_extraction.o" -o "bit_extraction.o" "../bit_extraction.c"
+Finished building: ../bit_extraction.c
  
-Building target: 021_struct_with_butfields
+Building target: 023_union_bit_extraction
 Invoking: GCC C Linker
-gcc  -o "021_struct_with_butfields"  ./bitfields.o   
-Finished building target: 021_struct_with_butfields
+gcc  -o "023_union_bit_extraction"  ./bit_extraction.o   
+Finished building target: 023_union_bit_extraction
  
-13:28:23 **** Incremental Build of configuration Debug for project 021_struct_with_butfields ****
-make all 
-make: Nothing to be done for 'all'.

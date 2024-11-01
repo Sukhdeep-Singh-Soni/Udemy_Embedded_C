@@ -1,0 +1,47 @@
+/*
+ * bit_extraction.c
+ *
+ *  Created on: Nov 1, 2024
+ *      Author: deep
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+union packet {
+	uint32_t packetValue;
+
+	struct {
+		uint8_t  crc;
+		uint8_t  status;
+		uint16_t payload;
+		uint8_t  bat;
+		uint8_t  sensor;
+		uint8_t  long_addr;
+		uint8_t  short_addr;
+		uint8_t  addr_mode;
+	}packetFields;
+}
+int main() {
+
+	union packet packet_val;
+
+	printf("Enter the 32-bit packet value (int hex) : ");
+	scanf("%x", &packet_val.packetValue);
+
+	printf("crc				:%#x\n", packet_val.packetFields.crc);
+	printf("status			:%#x\n", packet_val.packetFields.status);
+	printf("payload			:%#x\n", packet_val.packetFields.payload);
+	printf("bat				:%#x\n", packet_val.packetFields.bat);
+	printf("sensor			:%#x\n", packet_val.packetFields.sensor);
+	printf("long_addr		:%#x\n", packet_val.packetFields.long_addr);
+	printf("short_addr		:%#x\n", packet_val.packetFields.short_addr);
+	printf("addr_mode		:%#x\n", packet_val.packetFields.addr_mode);
+
+	printf("total size of struct = %lu\n", sizeof(packet));
+
+}
+
+
+
+

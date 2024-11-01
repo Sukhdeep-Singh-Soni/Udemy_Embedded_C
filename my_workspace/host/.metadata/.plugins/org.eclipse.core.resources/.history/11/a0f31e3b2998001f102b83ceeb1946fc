@@ -1,0 +1,17 @@
+/*
+ * union.c
+ *
+ *  Created on: Nov 1, 2024
+ *      Author: deep
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+union data {
+	uint16_t short_addr;
+	uint32_t long_addr;
+};
+int main() {
+
+}
