@@ -1,28 +1,21 @@
-12:31:22 **** Incremental Build of configuration Debug for project 009_struct_aligned_vs_unaligned ****
+16:21:49 **** Incremental Build of configuration Debug for project 010_led_on_bitfields ****
 make -j4 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:38:31: warning: variable 'packed_dataset' set but not used [-Wunused-but-set-variable]
-   38 |         struct packed_dataset packed_dataset;
-      |                               ^~~~~~~~~~~~~~
-../Src/main.c:37:24: warning: variable 'data' set but not used [-Wunused-but-set-variable]
-   37 |         struct dataset data;
-      |                        ^~~~
-arm-none-eabi-gcc -o "009_struct_aligned_vs_unaligned.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/deep/Desktop/Udemy_Embedded_C/my_workspace/target/009_struct_aligned_vs_unaligned/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="009_struct_aligned_vs_unaligned.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 009_struct_aligned_vs_unaligned.elf
+arm-none-eabi-gcc -o "010_led_on_bitfields.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/deep/Desktop/Udemy_Embedded_C/my_workspace/target/010_led_on_bitfields/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="010_led_on_bitfields.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 010_led_on_bitfields.elf
  
-arm-none-eabi-size  009_struct_aligned_vs_unaligned.elf 
-arm-none-eabi-objdump -h -S 009_struct_aligned_vs_unaligned.elf  > "009_struct_aligned_vs_unaligned.list"
+arm-none-eabi-size  010_led_on_bitfields.elf 
+arm-none-eabi-objdump -h -S 010_led_on_bitfields.elf  > "010_led_on_bitfields.list"
    text	   data	    bss	    dec	    hex	filename
-    732	      0	   1568	   2300	    8fc	009_struct_aligned_vs_unaligned.elf
+    784	      0	   1568	   2352	    930	010_led_on_bitfields.elf
 Finished building: default.size.stdout
  
-Finished building: 009_struct_aligned_vs_unaligned.list
+Finished building: 010_led_on_bitfields.list
  
-12:31:32 **** Incremental Build of configuration Debug for project 009_struct_aligned_vs_unaligned ****
+16:22:14 **** Incremental Build of configuration Debug for project 010_led_on_bitfields ****
 make -j4 all 
-arm-none-eabi-size  009_struct_aligned_vs_unaligned.elf 
+arm-none-eabi-size  010_led_on_bitfields.elf 
    text	   data	    bss	    dec	    hex	filename
-    732	      0	   1568	   2300	    8fc	009_struct_aligned_vs_unaligned.elf
+    784	      0	   1568	   2352	    930	010_led_on_bitfields.elf
 Finished building: default.size.stdout
  
