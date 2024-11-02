@@ -1,12 +1,12 @@
-13:56:56 **** Incremental Build of configuration Debug for project 023_union_bit_extraction ****
+10:35:11 **** Incremental Build of configuration Debug for project 030_macro_conditional ****
 make all 
-Building file: ../bit_extraction.c
+Building file: ../conditional.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"bit_extraction.d" -MT"bit_extraction.o" -o "bit_extraction.o" "../bit_extraction.c"
-Finished building: ../bit_extraction.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"conditional.d" -MT"conditional.o" -o "conditional.o" "../conditional.c"
+Finished building: ../conditional.c
  
-Building target: 023_union_bit_extraction
+Building target: 030_macro_conditional
 Invoking: GCC C Linker
-gcc  -o "023_union_bit_extraction"  ./bit_extraction.o   
-Finished building target: 023_union_bit_extraction
+gcc  -o "030_macro_conditional"  ./conditional.o   
+Finished building target: 030_macro_conditional
  

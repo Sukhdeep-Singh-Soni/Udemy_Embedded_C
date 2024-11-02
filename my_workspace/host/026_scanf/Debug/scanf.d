@@ -1,0 +1,1 @@
+scanf.o: ../scanf.c

@@ -1,4 +1,4 @@
-!SESSION 2024-10-31 10:02:28.943 -----------------------------------------------
+!SESSION 2024-11-01 21:00:50.271 -----------------------------------------------
 eclipse.buildId=Version 1.16.1
 java.version=17.0.11
 java.vendor=Eclipse Adoptium
@@ -6,71 +6,9 @@ BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
 Command-line arguments:  -data /home/deep/Desktop/Udemy_Embedded_C/my_workspace/target -os linux -ws gtk -arch x86_64
 
 This is a continuation of log file /home/deep/Desktop/Udemy_Embedded_C/my_workspace/target/.metadata/.bak_6.log
-Created Time: 2024-10-31 11:11:17.642
+Created Time: 2024-11-01 21:29:40.218
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.642
-!MESSAGE Error logged from Debug UI: 
-!STACK 0
-java.lang.NullPointerException: Input to viewer update should not be null
-	at org.eclipse.debug.internal.ui.viewers.model.ViewerUpdateMonitor.<init>(ViewerUpdateMonitor.java:90)
-	at org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.<init>(ChildrenUpdate.java:45)
-	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.doUpdateElement(TreeModelContentProvider.java:1190)
-	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.updateElement(TreeModelContentProvider.java:1762)
-	at org.eclipse.jface.viewers.TreeViewer.virtualLazyUpdateWidget(TreeViewer.java:1012)
-	at org.eclipse.jface.viewers.TreeViewer.lambda$1(TreeViewer.java:259)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5854)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1555)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1538)
-	at org.eclipse.swt.widgets.Tree.checkData(Tree.java:373)
-	at org.eclipse.swt.widgets.Tree.cellDataProc(Tree.java:305)
-	at org.eclipse.swt.widgets.Display.cellDataProc(Display.java:994)
-	at org.eclipse.swt.internal.gtk.GTK.gtk_tree_store_clear(Native Method)
-	at org.eclipse.swt.widgets.Tree.removeAll(Tree.java:3002)
-	at org.eclipse.jface.viewers.TreeViewer.removeAll(TreeViewer.java:288)
-	at org.eclipse.jface.viewers.AbstractTreeViewer.lambda$1(AbstractTreeViewer.java:1610)
-	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1397)
-	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:366)
-	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1358)
-	at org.eclipse.jface.viewers.AbstractTreeViewer.inputChanged(AbstractTreeViewer.java:1606)
-	at org.eclipse.debug.internal.ui.viewers.model.InternalTreeModelViewer.inputChanged(InternalTreeModelViewer.java:486)
-	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:282)
-	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1641)
-	at org.eclipse.debug.internal.ui.views.variables.VariablesView.setViewerInput(VariablesView.java:466)
-	at org.eclipse.debug.internal.ui.views.variables.VariablesView.viewerInputUpdateComplete(VariablesView.java:441)
-	at org.eclipse.debug.internal.ui.views.variables.VariablesView.lambda$0(VariablesView.java:297)
-	at org.eclipse.debug.internal.ui.viewers.model.provisional.ViewerInputService.lambda$1(ViewerInputService.java:54)
-	at org.eclipse.debug.internal.ui.viewers.model.ViewerInputUpdate$1.runInUIThread(ViewerInputUpdate.java:75)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:148)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5039)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4519)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
-	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
-
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.642
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:29:40.218
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -135,7 +73,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.643
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:29:40.218
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -197,7 +135,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.643
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:29:40.219
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -262,7 +200,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.643
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:29:40.219
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -324,7 +262,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.644
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:29:40.220
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -389,7 +327,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.644
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:29:40.220
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -451,7 +389,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.644
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:29:40.220
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -516,7 +454,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.645
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:29:40.221
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -578,7 +516,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.645
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:29:40.221
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -643,7 +581,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.645
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:29:40.221
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -705,7 +643,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.646
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:29:40.222
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -770,7 +708,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.646
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:29:40.222
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -832,7 +770,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.646
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:29:40.223
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -897,7 +835,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.647
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:29:40.223
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -959,7 +897,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.647
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:29:40.224
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -1024,7 +962,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.647
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:29:40.224
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -1086,7 +1024,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.648
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:29:40.224
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -1096,6 +1034,68 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.coalesce(TreeModelContentProvider.java:972)
 	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.schedule(TreeModelContentProvider.java:956)
 	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.doUpdateElement(TreeModelContentProvider.java:1191)
+	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.updateElement(TreeModelContentProvider.java:1762)
+	at org.eclipse.jface.viewers.TreeViewer.virtualLazyUpdateWidget(TreeViewer.java:1012)
+	at org.eclipse.jface.viewers.TreeViewer.lambda$1(TreeViewer.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5854)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1555)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1538)
+	at org.eclipse.swt.widgets.Tree.checkData(Tree.java:373)
+	at org.eclipse.swt.widgets.Tree.cellDataProc(Tree.java:305)
+	at org.eclipse.swt.widgets.Display.cellDataProc(Display.java:994)
+	at org.eclipse.swt.internal.gtk.GTK.gtk_tree_store_clear(Native Method)
+	at org.eclipse.swt.widgets.Tree.removeAll(Tree.java:3002)
+	at org.eclipse.jface.viewers.TreeViewer.removeAll(TreeViewer.java:288)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.lambda$1(AbstractTreeViewer.java:1610)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1397)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:366)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1358)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.inputChanged(AbstractTreeViewer.java:1606)
+	at org.eclipse.debug.internal.ui.viewers.model.InternalTreeModelViewer.inputChanged(InternalTreeModelViewer.java:486)
+	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:282)
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1641)
+	at org.eclipse.debug.internal.ui.views.variables.VariablesView.setViewerInput(VariablesView.java:466)
+	at org.eclipse.debug.internal.ui.views.variables.VariablesView.viewerInputUpdateComplete(VariablesView.java:441)
+	at org.eclipse.debug.internal.ui.views.variables.VariablesView.lambda$0(VariablesView.java:297)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ViewerInputService.lambda$1(ViewerInputService.java:54)
+	at org.eclipse.debug.internal.ui.viewers.model.ViewerInputUpdate$1.runInUIThread(ViewerInputUpdate.java:75)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:148)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5039)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4519)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
+
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.308
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+java.lang.NullPointerException: Input to viewer update should not be null
+	at org.eclipse.debug.internal.ui.viewers.model.ViewerUpdateMonitor.<init>(ViewerUpdateMonitor.java:90)
+	at org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.<init>(ChildrenUpdate.java:45)
+	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.doUpdateElement(TreeModelContentProvider.java:1190)
 	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.updateElement(TreeModelContentProvider.java:1762)
 	at org.eclipse.jface.viewers.TreeViewer.virtualLazyUpdateWidget(TreeViewer.java:1012)
 	at org.eclipse.jface.viewers.TreeViewer.lambda$1(TreeViewer.java:259)
@@ -1151,7 +1151,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.648
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.308
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -1213,7 +1213,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.649
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.309
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -1278,7 +1278,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.649
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.309
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -1340,7 +1340,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.649
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.310
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -1405,7 +1405,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.650
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.310
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -1467,7 +1467,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.650
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.311
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -1532,7 +1532,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.651
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.311
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -1594,7 +1594,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.651
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.312
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -1659,7 +1659,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.651
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.312
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -1721,7 +1721,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.651
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.312
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -1786,7 +1786,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.652
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.313
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -1848,7 +1848,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.652
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.313
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -1913,7 +1913,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.653
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.314
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -1975,7 +1975,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.653
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.314
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -2040,7 +2040,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.653
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.314
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -2102,7 +2102,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.653
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.315
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -2167,7 +2167,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.654
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.315
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -2229,7 +2229,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.654
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.316
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -2294,7 +2294,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.655
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.316
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -2356,7 +2356,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.655
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.316
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -2421,7 +2421,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.655
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.317
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -2483,7 +2483,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.655
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.317
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -2548,7 +2548,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.656
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.318
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -2610,7 +2610,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.656
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.318
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -2675,7 +2675,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.657
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.318
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -2737,7 +2737,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.657
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.319
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -2802,7 +2802,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.657
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.319
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -2864,7 +2864,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.658
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.319
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -2929,7 +2929,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.658
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.320
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -2991,7 +2991,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.658
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.320
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -3056,7 +3056,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.659
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.320
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -3118,7 +3118,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.659
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.321
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -3183,7 +3183,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.659
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.321
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -3245,7 +3245,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.660
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.321
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -3310,7 +3310,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.660
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.322
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -3372,7 +3372,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.660
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.322
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -3437,7 +3437,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.661
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.322
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -3499,7 +3499,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.661
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.323
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -3564,7 +3564,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.661
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.323
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -3626,7 +3626,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.662
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.323
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -3691,7 +3691,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.662
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.324
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -3753,7 +3753,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.662
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.324
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -3818,7 +3818,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.663
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.324
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -3880,7 +3880,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.663
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.325
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -3945,7 +3945,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.664
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.325
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -4007,7 +4007,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.664
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.325
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -4072,7 +4072,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.664
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.326
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -4134,7 +4134,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.665
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.326
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -4199,7 +4199,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.665
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.327
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -4261,7 +4261,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.666
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.327
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -4326,7 +4326,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.666
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.327
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -4388,7 +4388,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.666
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.328
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -4453,7 +4453,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.667
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.328
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -4515,7 +4515,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.667
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.328
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -4580,7 +4580,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.668
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.329
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -4642,7 +4642,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.668
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.329
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -4707,7 +4707,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.668
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.329
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -4769,7 +4769,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.669
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.330
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -4834,7 +4834,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.669
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.330
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -4896,7 +4896,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.670
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.330
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -4961,7 +4961,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.670
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.331
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -5023,7 +5023,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.670
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.331
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -5088,7 +5088,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.671
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.331
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -5150,7 +5150,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.671
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.332
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -5215,7 +5215,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.672
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.332
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -5277,7 +5277,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.672
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.332
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -5342,7 +5342,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.672
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.333
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -5404,7 +5404,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.673
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.333
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -5469,7 +5469,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.673
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.334
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -5531,7 +5531,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.674
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.334
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -5596,7 +5596,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.674
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.334
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -5658,7 +5658,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.674
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.334
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -5723,7 +5723,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:17.675
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.335
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -5785,7 +5785,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:17.675
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.335
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -5850,7 +5850,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.011
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.336
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -5912,69 +5912,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.011
-!MESSAGE Error logged from Debug UI: 
-!STACK 0
-java.lang.NullPointerException: Input to viewer update should not be null
-	at org.eclipse.debug.internal.ui.viewers.model.ViewerUpdateMonitor.<init>(ViewerUpdateMonitor.java:90)
-	at org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.<init>(ChildrenUpdate.java:45)
-	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.doUpdateElement(TreeModelContentProvider.java:1190)
-	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.updateElement(TreeModelContentProvider.java:1762)
-	at org.eclipse.jface.viewers.TreeViewer.virtualLazyUpdateWidget(TreeViewer.java:1012)
-	at org.eclipse.jface.viewers.TreeViewer.lambda$1(TreeViewer.java:259)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5854)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1555)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1538)
-	at org.eclipse.swt.widgets.Tree.checkData(Tree.java:373)
-	at org.eclipse.swt.widgets.Tree.cellDataProc(Tree.java:305)
-	at org.eclipse.swt.widgets.Display.cellDataProc(Display.java:994)
-	at org.eclipse.swt.internal.gtk.GTK.gtk_tree_store_clear(Native Method)
-	at org.eclipse.swt.widgets.Tree.removeAll(Tree.java:3002)
-	at org.eclipse.jface.viewers.TreeViewer.removeAll(TreeViewer.java:288)
-	at org.eclipse.jface.viewers.AbstractTreeViewer.lambda$1(AbstractTreeViewer.java:1610)
-	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1397)
-	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:366)
-	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1358)
-	at org.eclipse.jface.viewers.AbstractTreeViewer.inputChanged(AbstractTreeViewer.java:1606)
-	at org.eclipse.debug.internal.ui.viewers.model.InternalTreeModelViewer.inputChanged(InternalTreeModelViewer.java:486)
-	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:282)
-	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1641)
-	at org.eclipse.debug.internal.ui.views.variables.VariablesView.setViewerInput(VariablesView.java:466)
-	at org.eclipse.debug.internal.ui.views.variables.VariablesView.viewerInputUpdateComplete(VariablesView.java:441)
-	at org.eclipse.debug.internal.ui.views.variables.VariablesView.lambda$0(VariablesView.java:297)
-	at org.eclipse.debug.internal.ui.viewers.model.provisional.ViewerInputService.lambda$1(ViewerInputService.java:54)
-	at org.eclipse.debug.internal.ui.viewers.model.ViewerInputUpdate$1.runInUIThread(ViewerInputUpdate.java:75)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:148)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5039)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4519)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
-	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
-
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.012
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.336
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -6039,7 +5977,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.012
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.336
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -6101,7 +6039,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.013
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.337
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -6166,7 +6104,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.013
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.337
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -6228,7 +6166,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.013
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.337
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -6293,7 +6231,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.014
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.338
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -6355,7 +6293,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.014
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.338
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -6420,7 +6358,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.014
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.339
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -6482,7 +6420,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.015
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.339
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -6547,7 +6485,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.015
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.339
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -6609,7 +6547,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.015
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.340
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -6674,7 +6612,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.016
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.340
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -6736,7 +6674,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.016
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.340
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -6801,7 +6739,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.017
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.341
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -6863,7 +6801,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.017
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.341
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -6928,7 +6866,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.017
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.341
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -6990,7 +6928,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.018
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.342
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -7055,7 +6993,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.019
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.342
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -7117,7 +7055,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.019
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.342
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -7182,7 +7120,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.019
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.343
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -7244,7 +7182,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.020
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.343
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -7309,7 +7247,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.020
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.343
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -7371,7 +7309,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.020
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.344
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -7436,7 +7374,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.021
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.344
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -7498,7 +7436,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.021
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.344
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -7563,7 +7501,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.022
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.345
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -7625,7 +7563,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.022
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.345
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -7690,7 +7628,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.022
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.345
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -7752,7 +7690,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.023
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.346
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -7817,7 +7755,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.023
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.346
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -7879,7 +7817,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.023
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.346
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -7944,7 +7882,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.024
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.347
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -8006,7 +7944,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.024
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.347
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -8071,7 +8009,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.025
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.348
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -8133,7 +8071,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.025
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.348
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -8198,7 +8136,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.025
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.348
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -8260,7 +8198,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.026
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.348
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -8325,7 +8263,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.026
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.349
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -8387,7 +8325,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.026
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.349
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -8452,7 +8390,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.027
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.350
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -8514,7 +8452,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.027
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.350
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -8579,7 +8517,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.027
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.351
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -8641,7 +8579,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.027
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.351
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -8706,7 +8644,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.028
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.352
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -8768,7 +8706,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.028
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.352
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -8833,7 +8771,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.029
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.353
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -8895,7 +8833,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.029
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.353
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -8960,7 +8898,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.029
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.354
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -9022,7 +8960,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.030
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.354
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -9087,7 +9025,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.030
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.355
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -9149,7 +9087,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.030
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.355
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -9214,7 +9152,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.031
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.355
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -9276,7 +9214,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.031
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.356
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -9341,7 +9279,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.031
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:10.356
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -9403,7 +9341,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.032
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:10.356
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -9413,6 +9351,68 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.coalesce(TreeModelContentProvider.java:972)
 	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.schedule(TreeModelContentProvider.java:956)
 	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.doUpdateElement(TreeModelContentProvider.java:1191)
+	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.updateElement(TreeModelContentProvider.java:1762)
+	at org.eclipse.jface.viewers.TreeViewer.virtualLazyUpdateWidget(TreeViewer.java:1012)
+	at org.eclipse.jface.viewers.TreeViewer.lambda$1(TreeViewer.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5854)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1555)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1538)
+	at org.eclipse.swt.widgets.Tree.checkData(Tree.java:373)
+	at org.eclipse.swt.widgets.Tree.cellDataProc(Tree.java:305)
+	at org.eclipse.swt.widgets.Display.cellDataProc(Display.java:994)
+	at org.eclipse.swt.internal.gtk.GTK.gtk_tree_store_clear(Native Method)
+	at org.eclipse.swt.widgets.Tree.removeAll(Tree.java:3002)
+	at org.eclipse.jface.viewers.TreeViewer.removeAll(TreeViewer.java:288)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.lambda$1(AbstractTreeViewer.java:1610)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1397)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:366)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1358)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.inputChanged(AbstractTreeViewer.java:1606)
+	at org.eclipse.debug.internal.ui.viewers.model.InternalTreeModelViewer.inputChanged(InternalTreeModelViewer.java:486)
+	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:282)
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1641)
+	at org.eclipse.debug.internal.ui.views.variables.VariablesView.setViewerInput(VariablesView.java:466)
+	at org.eclipse.debug.internal.ui.views.variables.VariablesView.viewerInputUpdateComplete(VariablesView.java:441)
+	at org.eclipse.debug.internal.ui.views.variables.VariablesView.lambda$0(VariablesView.java:297)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ViewerInputService.lambda$1(ViewerInputService.java:54)
+	at org.eclipse.debug.internal.ui.viewers.model.ViewerInputUpdate$1.runInUIThread(ViewerInputUpdate.java:75)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:148)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5039)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4519)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
+
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.630
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+java.lang.NullPointerException: Input to viewer update should not be null
+	at org.eclipse.debug.internal.ui.viewers.model.ViewerUpdateMonitor.<init>(ViewerUpdateMonitor.java:90)
+	at org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.<init>(ChildrenUpdate.java:45)
+	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.doUpdateElement(TreeModelContentProvider.java:1190)
 	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.updateElement(TreeModelContentProvider.java:1762)
 	at org.eclipse.jface.viewers.TreeViewer.virtualLazyUpdateWidget(TreeViewer.java:1012)
 	at org.eclipse.jface.viewers.TreeViewer.lambda$1(TreeViewer.java:259)
@@ -9468,7 +9468,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.032
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.631
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -9530,7 +9530,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.033
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.631
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -9595,7 +9595,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.033
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.632
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -9657,7 +9657,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.034
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.632
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -9722,7 +9722,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.034
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.633
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -9784,7 +9784,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.034
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.634
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -9849,7 +9849,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.035
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.634
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -9911,7 +9911,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.035
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.635
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -9976,7 +9976,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.035
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.635
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -10038,7 +10038,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.036
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.635
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -10103,7 +10103,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.036
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.636
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -10165,7 +10165,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.036
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.636
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -10230,7 +10230,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.037
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.637
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -10292,7 +10292,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.037
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.637
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -10357,7 +10357,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.037
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.637
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -10419,7 +10419,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.038
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.638
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -10484,7 +10484,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.038
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.638
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -10546,7 +10546,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.038
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.638
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -10611,7 +10611,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.039
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.639
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -10673,7 +10673,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.039
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.639
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -10738,7 +10738,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.040
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.639
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -10800,7 +10800,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.040
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.640
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -10865,7 +10865,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.041
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.640
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -10927,7 +10927,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.041
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.640
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -10992,7 +10992,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.041
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.641
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -11054,7 +11054,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.042
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.641
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -11119,7 +11119,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.042
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.642
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -11181,7 +11181,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.042
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.642
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -11246,7 +11246,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.043
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.643
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -11308,7 +11308,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.043
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.643
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -11373,7 +11373,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.043
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.644
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -11435,7 +11435,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.044
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.644
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -11500,7 +11500,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.044
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.645
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -11562,7 +11562,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.044
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.646
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -11627,7 +11627,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.045
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.646
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -11689,7 +11689,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.045
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.647
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -11754,7 +11754,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.045
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.648
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -11816,7 +11816,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.046
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.648
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -11881,7 +11881,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.046
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.649
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -11943,7 +11943,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.047
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.649
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -12008,7 +12008,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.047
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.650
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -12070,7 +12070,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.047
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.650
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -12135,7 +12135,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.048
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.651
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -12197,7 +12197,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.048
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.652
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -12262,7 +12262,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.049
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.652
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -12324,7 +12324,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.049
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.653
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -12389,7 +12389,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.050
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.654
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -12451,7 +12451,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.050
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.654
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -12516,7 +12516,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.050
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.655
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null
@@ -12578,7 +12578,7 @@ java.lang.NullPointerException: Input to viewer update should not be null
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.ui 4 0 2024-10-31 11:11:38.051
+!ENTRY org.eclipse.ui 4 0 2024-11-01 21:30:43.655
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because the return value of "org.eclipse.debug.internal.ui.viewers.model.ChildrenUpdate.getViewerInput()" is null
@@ -12643,7 +12643,7 @@ java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because th
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
 
-!ENTRY org.eclipse.debug.ui 4 120 2024-10-31 11:11:38.051
+!ENTRY org.eclipse.debug.ui 4 120 2024-11-01 21:30:43.656
 !MESSAGE Error logged from Debug UI: 
 !STACK 0
 java.lang.NullPointerException: Input to viewer update should not be null

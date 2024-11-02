@@ -1,0 +1,38 @@
+/*
+ * array.c
+ *
+ *  Created on: Nov 1, 2024
+ *      Author: deep
+ */
+
+
+#include <stdio.h>
+#include <stdint.h>
+int main() {
+
+	uint32_t array[100];
+	printf("size of array = %ld\n", sizeof(array));
+	printf("Base address of array = %p\n", array);
+
+	uint8_t somedata[10] = {0xff, 0xff, 0xff};
+
+	for(uint32_t i = 0; i < 10; i++) {
+//		somedata[i] = 0xff;
+//		printf("%x\t", somedata[i]);
+		somedata[i] = i;
+	}
+
+	somedata[2] = 0x33;
+	*(somedata+3) = 0x54;
+
+//	printf("\n");
+//	for(uint32_t i = 0; i < 10; i++) {
+//		printf("%x\t", somedata[i]);
+//	}
+}
+
+void passing_array(uint8_t *parray, uint32_t size) {
+	for(uint32_t i = 0; i < size; i++) {
+		printf("%x\t", parray[i]); //*(parray + i) same
+	}
+}

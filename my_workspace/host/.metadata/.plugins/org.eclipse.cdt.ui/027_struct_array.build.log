@@ -1,0 +1,15 @@
+07:44:39 **** Incremental Build of configuration Debug for project 027_struct_array ****
+make all 
+Building file: ../struct_arr.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"struct_arr.d" -MT"struct_arr.o" -o "struct_arr.o" "../struct_arr.c"
+Finished building: ../struct_arr.c
+ 
+Building target: 027_struct_array
+Invoking: GCC C Linker
+gcc  -o "027_struct_array"  ./struct_arr.o   
+Finished building target: 027_struct_array
+ 
+
+07:44:41 Build Finished. 0 errors, 0 warnings. (took 1s.831ms)
+

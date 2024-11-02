@@ -1,0 +1,20 @@
+/*
+ * conditional.c
+ *
+ *  Created on: Nov 2, 2024
+ *      Author: deep
+ */
+#include <stdio.h>
+
+#define PI_VALUE1	(3.1415f) /*safe to guard*/
+#define AREA_OF_CIRCLE2(x)	((PI_VALUE) * (x) * (x)) /*guard values with parenthesis*/
+
+int main() {
+
+	float area;
+
+	area = AREA_OF_CIRCLE(2);
+	printf("area of circle : %f\n",area);
+}
+
+

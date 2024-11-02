@@ -1,0 +1,16 @@
+/*
+ * array.c
+ *
+ *  Created on: Nov 1, 2024
+ *      Author: deep
+ */
+
+
+#include <stdio.h>
+#include <stdint.h>
+int main() {
+
+	uint32_t array[100];
+	printf("size of array = %ld\n", sizeof(array));
+	printf("Base address of array = %p\n", array);
+}

@@ -1,0 +1,15 @@
+09:55:34 **** Incremental Build of configuration Debug for project 028_student_record_prog ****
+make all 
+Building file: ../manage_records.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"manage_records.d" -MT"manage_records.o" -o "manage_records.o" "../manage_records.c"
+Finished building: ../manage_records.c
+ 
+Building target: 028_student_record_prog
+Invoking: GCC C Linker
+gcc  -o "028_student_record_prog"  ./manage_records.o   
+Finished building target: 028_student_record_prog
+ 
+
+09:55:36 Build Finished. 0 errors, 0 warnings. (took 1s.932ms)
+

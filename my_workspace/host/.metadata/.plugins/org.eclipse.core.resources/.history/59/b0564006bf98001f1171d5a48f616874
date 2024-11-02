@@ -1,0 +1,21 @@
+/*
+ * struct_arr.c
+ *
+ *  Created on: Nov 2, 2024
+ *      Author: deep
+ */
+#include <stdio.h>
+#include <stdint.h>
+
+typedef struct {
+	int  rollnumber;
+	char name[50];
+	char branch[50];
+	char dob[15];
+	int  semister;
+}STUDENT_INFO_t;
+
+int main() {
+
+}
+

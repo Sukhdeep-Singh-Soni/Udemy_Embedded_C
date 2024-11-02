@@ -1,0 +1,1 @@
+macro.o: ../macro.c

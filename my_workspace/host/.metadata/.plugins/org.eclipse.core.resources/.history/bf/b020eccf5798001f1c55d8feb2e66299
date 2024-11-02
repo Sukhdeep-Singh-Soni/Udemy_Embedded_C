@@ -1,0 +1,19 @@
+/*
+ * swap.c
+ *
+ *  Created on: Nov 1, 2024
+ *      Author: deep
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+void wait_for_user_input(void);
+void display_array(int32_t const *const parr, uint32_t n);
+void swap_array(int32_t const *const parr1, int32_t const *const parr2,
+				uint32_t n, uint32_t n);
+
+
+int main() {
+
+}

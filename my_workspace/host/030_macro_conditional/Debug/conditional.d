@@ -1,0 +1,1 @@
+conditional.o: ../conditional.c

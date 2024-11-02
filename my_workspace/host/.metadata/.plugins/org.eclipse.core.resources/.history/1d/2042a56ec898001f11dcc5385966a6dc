@@ -1,0 +1,113 @@
+/*
+ * manage_records.c
+ *
+ *  Created on: Nov 2, 2024
+ *      Author: deep
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+typedef struct {
+	int  rollnumber;
+	char name[50];
+	char branch[50];
+	char dob[15];
+	int  semister;
+}STUDENT_INFO_t;
+
+STUDENT_INFO_t students[10];
+
+uint32_t const max_records = 10;
+
+void display_all_records(STUDENT_INFO_t *pBaseAddr, uint32_t const record_limit);
+
+int main() {
+
+	uint8_t option;
+
+	while(1) {
+		printf("Student record management program\n");
+		printf("Display all records		-->1\n");
+		printf("Add new record			-->2\n");
+		printf("Delete a record			-->3\n");
+		printf("Exit Application		-->4\n");
+		printf("Enter your option here : ");
+		scanf("%c", &option);
+
+		switch(option) {
+		case '1':
+			display_all_records(students, max_records);
+			break;
+		case '2':
+			//add a new record
+			break;
+		case '3':
+			//delete a record
+			break;
+		case '4':
+			//exit application
+			printf("Exiting application\n");
+			return 0;
+			break;
+		default:
+			printf("Invalid option!,  Exiting...\n");
+			return -1;
+		}//end of switch case
+	}//end of while loop
+}
+
+void add_new_record(STUDENT_INFO_t *pBaseAddr, uint32_t const record_limit) {
+
+	int roll_num;
+	uint8_t bkp = 11, error_flag = 0;
+
+	printf("Enter the roll number for new student : ");
+	scanf("%d",&roll_num);
+
+	for(uint32_t i = 0; i < record_limit; i++) {
+		if(pBaseAddr[i].rollnumber != 0) {
+			if(roll_num == pBaseAddr[i].rollnumber) {
+				printf("Record already exist\n");
+				error_flag = 1;
+				break;
+			}
+		} else {
+			bkp = i;
+		}
+	}
+
+	if(bkp != 11 && error_flag != 1) {
+		pBaseAddr[bkp].rollnumber = roll_num;
+		printf("Enter Student semister : ");
+		scanf("%d",&((pBaseAddr+bkp)->semister));
+		printf("Enter Student name : ");
+		scanf("%s",(pBaseAddr+bkp)->name);
+		printf("Enter Student branch : ");
+		scanf("%s",(pBaseAddr+bkp)->branch);
+		printf("Enter Student date of burth : ");
+		scanf("%s",(pBaseAddr+bkp)->dob);
+		printf("Record added successfully");
+	}
+}
+
+void display_all_records(STUDENT_INFO_t *pBaseAddr, uint32_t const record_limit) {
+
+	uint32_t record_cnt = 0;
+
+	for(uint32_t i = 0; i < record_limit; i++) {
+		if(pBaseAddr[i].rollnumber != 0) {
+			record_cnt++;
+			printf("rollnumber of %d element struct arr is %d\n", i, (pBaseAddr + i)->rollnumber);
+			printf("name of %d element struct arr is %s\n", i, (pBaseAddr + i)->name);
+			printf("branch of %d element struct arr is %s\n", i, (pBaseAddr + i)->branch);
+			printf("DOB of %d element struct arr is %s\n", i, (pBaseAddr + i)->dob);
+			printf("semister of %d element of struct arr is %d\n", i, pBaseAddr[i].semister);
+		}
+	}
+
+	if(record_cnt == 0) {
+		printf("No records found\n");
+	}
+}
+
